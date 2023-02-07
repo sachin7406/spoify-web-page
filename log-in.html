@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="log-in.css">
+    <link rel="stylesheet" href="sign-up.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="loaderbg">
+        <div class="loader">
+            <img src="image/install-spotify-on-ubuntu.gif" alt="">
+        </div>
+    </div>
+    <div class="sign-up">
+        <div class="up-container" align="center">
+            <div class="row upper-contant">
+                <div class="logo">
+                    <img src="image/Spotify_Logo_RGB_Green.png" alt="logo">
+                </div>
+            </div>
+            <div class="headline">
+                <p>To continue, log in to Spotify.</p>
+            </div>
+            <div class="row social-media">
+                <div class=" sc-btn btn facebook">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <span>Continue with Facebook</span>
+
+                </div>
+                <div class=" sc-btn btn google">
+                    <a href="#"><i class="fa fa-google"></i></a>
+                    <span>Continue with Google</span>
+                </div>
+                <div class="sc-btn btn mobile-no">
+                    <span>Continue With Number</span>
+                </div>
+            </div>
+            <div class="row or-line">
+                <p>-------------------------------------- OR -------------------------------------- </p>
+            </div>
+        </div>
+        <form action="sign-up">
+            <div class="form" align="center">
+                <div class="row email">
+                    <label for="email">Whats your Email.. ?</label><br>
+                    <input class="input" type="email" name="email" id="email" placeholder="Enter your email......"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+                <div class="row password">
+                    <label for="pass">Create your password</label> <br>
+                    <input class="input" type="password" name="pass" id="pass" placeholder="Enter your password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                </div>
+                <div class="cantent">
+                    <div class="cantent-inner">
+                        <div class="forget-pass">
+                            <p><a href="#">Forgot your password?</a></p>
+                        </div>
+                        <div class="rem">
+                            <input type="checkbox" name="Remember-me" id="Remember-me"><span>Remember me</span>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" class="btn log-btn"> <span>Log-in</span></button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <div class="signup" align="center">
+            <div class="text">
+                <h1>Don't have an account?</h1>
+            </div>
+            <div class="signup-link">
+                <div class=" sc-btn btn ">
+                    <button class="return"><a href="sign-up.html"></a>
+                        <span>Sign-up For Spotify</span></button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            setTimeout(function () { $('.loaderbg').fadeToggle(); }, 1000);
+        </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+
+</html>

@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    max-width: 1340px;
+    max-width: 1400px;
     overflow: hidden;
     width: 100%;
 }
@@ -24,11 +24,6 @@ body {
     margin: 0 auto;
 }
 
-.text-color {
-    background: linear-gradient(290deg, #3f5efb, #fc466b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .wrapper {
     width: 100%;
@@ -58,6 +53,9 @@ body {
     display: flex;
     gap: 1.4rem;
     list-style: none;
+    background: linear-gradient(290deg, #3f5efb, #fc466b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
